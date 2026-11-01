@@ -24,8 +24,9 @@ h1{font-size:28px}h2{font-size:19px;margin-top:32px}code{background:#f2f2f4;padd
 <ul>
 <li>It does not ask for your location, contacts, photos, microphone, phone number or email address, and it has no account or password. Scanning a room&#x27;s QR code uses Google&#x27;s code scanner, which does not give Roomsum access to your camera or pictures.</li>
 <li>It does not process payments. The UPI button only opens a UPI app you already have, with the amount filled in.</li>
-<li>It does not sell your data or share it with anyone other than Google Firebase, which stores it for us.</li>
+<li>It does not sell your data or share it with anyone other than Google: Firebase stores it for us, and a recipe&#x27;s video preview picture comes from YouTube (see below).</li>
 <li>It does send a room&#x27;s data to Google Firebase (and receives it back) to keep the roommates&#x27; phones in sync. Google acts as our service provider for this and the data is not used for advertising.</li>
+<li>If a recipe has a YouTube link, the app also downloads that video&#x27;s preview picture from YouTube (Google) over HTTPS. YouTube receives the video&#x27;s id and the phone&#x27;s internet address, as with any web request, and Roomsum keeps a copy of the picture on the phone. The video itself plays in the YouTube app or your browser.</li>
 <li>It does not use advertising, tracking, analytics or crash-reporting services.</li>
 </ul>
 <h2>Permissions</h2>
@@ -37,7 +38,7 @@ h1{font-size:28px}h2{font-size:19px;margin-top:32px}code{background:#f2f2f4;padd
 <h2>Who can see your data</h2>
 <p>Everyone in a room can see that room&#x27;s data. Only people who have the room code (or its QR code) can join. Someone who has the code can also see the list of people in the room (names, and UPI IDs if shared) so they can pick which one is them; they cannot see expenses until they join.</p>
 <h2>Third-party services</h2>
-<p>Roomsum uses Google Firebase (Cloud Firestore and Firebase Authentication) to store and sync a room. Google processes the data for us and its own privacy policy applies to that processing. Roomsum uses no other third-party service. Scanning a QR code uses Google&#x27;s code scanner provided by Google Play services.</p>
+<p>Roomsum uses Google Firebase (Cloud Firestore and Firebase Authentication) to store and sync a room. Google processes the data for us and its own privacy policy applies to that processing. The only other Google service Roomsum contacts is YouTube&#x27;s image server, to show the preview picture of a video you saved with a recipe (described above). Roomsum uses no other third-party service. Scanning a QR code uses Google&#x27;s code scanner provided by Google Play services.</p>
 <h2>Payments</h2>
 <p>Roomsum does not process payments. The UPI buttons open a UPI app you already have (such as PhonePe, Google Pay or Paytm) with the amount filled in. Payments are made and handled entirely by that app.</p>
 <h2>Reports and exports</h2>
